@@ -2,7 +2,7 @@
 
 A simple Todo application built with Next.js, TypeScript, and Framer Motion. Users can add, delete, and toggle tasks.
 
-![image](https://github.com/user-attachments/assets/8dd0e1bf-f52d-435f-bc7b-cdae6e662dfb)
+![image](https://github.com/user-attachments/assets/0e123c5e-5c25-4b59-b541-0534a88d06e8)
 
 
 ## Features
