@@ -4,7 +4,6 @@ import GradientText from './components/gradientText/GradientText';
 export default function Home() {
   return (
     <main className='flex items-center justify-center min-h-screen'>
-      
       <div className='text-center'>
         <GradientText
           colors={['#40ffaa', '#4079ff', '#40ffaa', '#4079ff', '#40ffaa']}
@@ -17,7 +16,7 @@ export default function Home() {
         <p className='mb-6'>Start managing your tasks now.</p>
         <Link href='/todos'>
           <button
-            className='px-6 py-3 rounded text-white font-semibold cursor-pointer'
+            className='px-6 py-3 rounded text-white font-semibold cursor-pointer hover:opacity-80'
             style={{
               background:
                 'linear-gradient(270deg, #40ffaa, #4079ff, #40ffaa, #4079ff, #40ffaa)',

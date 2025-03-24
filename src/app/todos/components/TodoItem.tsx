@@ -15,7 +15,7 @@ export function TodoItem({ todo, onDelete, onToggle }: TodoItemProps) {
         <span
           className='w-6 h-6 border-2 border-white rounded-full flex items-center justify-center
             peer-checked:border-transparent peer-checked:bg-[#40ffaa]
-            transition-colors'
+            transition-colors flex-shrink-0'
         >
           {todo.completed && (
             <svg
@@ -34,7 +34,7 @@ export function TodoItem({ todo, onDelete, onToggle }: TodoItemProps) {
         </span>
 
         <span
-          className={`text-lg text-white transition-opacity mr-3 truncate max-w-[500px] ${
+          className={`text-lg text-white transition-opacity mr-3 break-all flex-grow ${
             todo.completed ? 'line-through opacity-50' : 'opacity-100'
           }`}
         >
@@ -44,7 +44,7 @@ export function TodoItem({ todo, onDelete, onToggle }: TodoItemProps) {
 
       <button
         onClick={() => onDelete(todo.id)}
-        className='text-white hover:text-gray-400 transition-colors cursor-pointer'
+        className='text-white hover:text-gray-400 transition-colors cursor-pointer flex-shrink-0'
       >
         <svg
           xmlns='http://www.w3.org/2000/svg'
